@@ -1,13 +1,8 @@
-#!/bin/bash 
+#!/bin/bash
 
-BACKUPTINE=`date +%b-%d-%y`
+DATE=$(date +%m:%d:%y)
 
-DESTENATION=/home/keped/backupfolder/ backup-$BACKUPTIME.tar.gz
+tar -czvf /home/keped/backup/backupfolder/$DATE.tar.gz /home/keped/backup/backup_sorcefolder
 
-SOURCEFOLDER=/home/keped/Backup_sorcefolder
-
-tar -cpzf $DESTENATION $SOURCEFOLDER
-
-crontab -e
-
+echo  "second backup" > /var/log/backup.log
 
