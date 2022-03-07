@@ -1,8 +1,8 @@
-#!/bin/bash
+#/bin/bash
 
 FULLDATE=$(date +%c)
 
-FILENAME=$()
+FILENAME=$(/home/keped/backup/backup_sorcefolder/experimentalfile)
 
 A=$(date +%N -r /home/keped/backup/backupfolder) 
 
@@ -12,7 +12,8 @@ INITIALSIZE=$(wc -c /home/keped/backup/backup_sorcefolder/experimentalfile | awk
 
 ARCHIVEDFILESIZE=$(tar ztvf $FILENAME.tar.gz -v --wildcards '*FOOBAR*')
 
-if [ $L -gt $A ] ; then	
+if [ $L -gt $A ]; 
+then	
 
 tar -czvf /home/keped/backup/backupfolder/$FILENAME.tar.gz /home/keped/backup/backup_sorcefolder
 
