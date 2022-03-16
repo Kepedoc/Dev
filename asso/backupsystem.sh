@@ -1,26 +1,25 @@
-#/bin/bash
+#!/bin/bash
 
 FULLDATE=$(date +%c)
 
-FILENAME=$(/home/keped/backup/backup_sorcefolder/experimentalfile)
+FILENAME="/home/keped/backup/backup_sorcefolder/file"
 
-A=$(date +%N -r /home/keped/backup/backupfolder) 
+BACKED=$(date +%N -r /home/keped/backup/backupfolder) 
 
-L=$(date +%N -r /home/keped/backup/backup_sorcefolder)
+SORCE=$(date +%N -r /home/keped/backup/backup_sorcefolder)
 
-INITIALSIZE=$(wc -c /home/keped/backup/backup_sorcefolder/experimentalfile | awk '{print $1}')
+INITIALSIZE=$(wc -c $FILENAME | awk '{print $1}')
 
-ARCHIVEDFILESIZE=$(tar ztvf $FILENAME.tar.gz -v --wildcards '*FOOBAR*')
+ARCHIVEDFILESIZE=$(tar ztvf $FILENAME -v --wildcards)
 
-if [ $L -gt $A ]; 
+if [ $SORCE -gt $BACKED ]; 
 then	
 
-tar -czvf /home/keped/backup/backupfolder/$FILENAME.tar.gz /home/keped/backup/backup_sorcefolder
+tar -cvf /home/keped/backup/backupfolder/kompressed /home/keped/backup/backup_sorcefolder
 
 echo -e "most recent archivisation of $FILENAME at: $FULLDATE \n filesize cut down from $INITIALFILESIZE bites to > $ARCHIVEDFILESIZE bites" >> /var/log/backup.log
 
 else
-
 echo "nothing is to be done"
 
 fi
