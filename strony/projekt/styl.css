@@ -1,0 +1,238 @@
+/* elementy strony */
+*{
+	scroll-behavior: smooth;
+}
+
+body{
+	display: flex;
+	text-align: center;
+}
+body:before{
+	content: ' ';
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 180%;
+	opacity: 0.15;
+	background-image: url("img/tlo.png");
+	background-repeat: repeat;
+	z-index: -2;
+}
+.naglowek{
+	margin-top: 70px;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+	font-size: 30px;
+	font-weight: 700;
+}
+.logo{
+	width: 20%;
+	height: 20%;
+}
+.main{
+	font-weight:600;
+	font-size: 35px;
+}
+.opis{
+	font-size: 16px;
+	width: 500px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.onas{
+	text-align: center;
+	width: 100%;
+	height: 200px;
+	float: left;
+}
+.zespol{
+	text-align: center;
+	height: 200px;
+	width: 100%;
+	float: left;
+}
+.galeria{
+	width: 100%;
+	height: 600px;
+}
+.jpg1{
+	width: 30%;
+	margin: 20px;
+	z-index: -1;
+	float: right;
+}
+.jpg2{
+	width: 30%;
+	margin: 20px;
+	z-index: -1;
+	float: right;
+}
+.instrukcja{
+	font-size: 18px;
+	display: flex;
+	justify-content: center;
+}
+
+
+
+/*nawigacja */
+#navbar {
+  background-color: #333;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  width: 100%;
+  display: block;
+  transition: top 0.3s;
+  z-index: 2;
+}
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 15px;
+  font-size: 17px;
+  z-index: 2;
+}
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+  z-index: 2;
+}
+#navbarmain{
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	background-color: #333;
+	width: 100%;
+	padding: 5px;
+	box-sizing: border-box;
+	margin-bottom: 50px;
+	font-size: 17px;
+	color: white;
+	text-align: center;
+	z-index: 2;
+}
+.nav{
+	float: left;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 15px;
+	font-size: 17px;
+	z-index: 2;
+}
+
+
+
+/* osoby */
+.osoba{
+	float: left;
+	width: 25%;
+	height: 100px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: none;
+	border: none;
+	
+}
+.osoba:hover{
+	background-color: #ccd7f073;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	border: ridge;
+}
+.modal {
+    display: none;/* Hidden by default */
+    position: fixed;/* Stay in place */
+    z-index: 1;/* Sit on top */
+    padding-top: 150px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;/* Full width */
+    height: 100%;/* Full height */
+    overflow: auto;/* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);/* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);/* Black w/ opacity */
+    overflow: auto;
+}
+.modal-content {
+    max-height: 80%;
+    overflow: auto;
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-animation-name: okienko;
+    -webkit-animation-duration: 0.4s;
+    animation-name: okienko;
+    animation-duration: 0.4s
+}
+/* animacja okienka */
+@-webkit-keyframes okienko {
+	from {
+		top: -300px;
+		opacity: 0
+	}
+	to {
+		top: 0;
+		opacity: 1
+	}
+}
+@keyframes okienko {
+	from {
+		top: -300px;
+		opacity: 0
+	}
+	to {
+		top: 0;
+		opacity: 1
+	}
+}
+/* guzik zamykania okienka */
+.close {
+	color: white;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+.close:hover, .close:focus {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+}
+.modal-header {
+	padding: 2px 16px;
+	background-color: grey;
+	color: white;
+}
+.modal-body {
+	padding: 2px 16px;
+}
+.modal-footer {
+	padding: 2px 16px;
+	background-color: grey;
+	color: white;
+}
+.osobazdj{
+	width: 10%;
+	float: none;
+}
+
+
+
+
+
+
+
+
+

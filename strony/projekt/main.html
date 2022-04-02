@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta charset="utf-8">
+	<!-- <meta http-equiv="refresh" content="10"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="icon.png">
+
+    <title>DebatOX</title>
+    <link rel="stylesheet" href="styl.css">
+
+	</head>
+
+	<body>
+		<div class="tlo">
+			<div class="tresc" id="start">
+				<!-- glowna stala nawigacja na samej gorze -->
+				<div id="navbarmain">
+					<div class="nav"><a href="#my" style="color:white;">O nas</a></div>
+					<div class="nav"><a href="#zesp" style="color:white;">Zespół</a></div>
+					<div class="nav"><a href="#gal" style="color:white;">Galeria</a></div>
+				</div>
+				
+				<div class="naglowek"><a href="main.html"><img src="img/logo.png" class="logo"></a></div><br><hr><br>
+				
+				<!-- nawigacja ruchoma przy scrollowaniu strony -->
+				<div id="navbar">
+					<a href="#my">O nas</a>
+					<a href="#zesp">Zespół</a>
+					<a href="#gal">Galeria</a>
+				</div>
+				
+				<!-- glowny opis projektu -->
+				<div class="onas">
+					<div id="my" class="main">O nas</div><br>
+					<div class="opis">Projekt DebatOX to projekt realizowany przez 4-osobowy zespół uczniów Technikum Informatycznego SCI w Szczecinie. Program powstał na potrzebe łatwego prowadzenia debat na dowolny temat w trakcie lekcji, jednak świetnie sprawdzi się również w innych sytuacjach np. w pracy lub na spotkaniu ze znajomymi. Działanie aplikacji jest bardzo proste, więc przygotowania nie zajmują wiele czasu i szybko można przejść do dyskusji.</div>
+				</div>
+				<hr><br>
+
+				<!-- sklad zespolu, opis osoby, dane kontaktowe -->
+				<div class="zespol">
+					<div id="zesp" class="main">Zespół</div><br>
+					
+						<!-- ---------------------------kasjan--------------------------- -->
+						<button class="osoba" id="myBtn1">Kasjan Zalewski</button>
+						
+							<div id="myModal1" class="modal">
+								<div class="modal-content">
+									<div class="modal-header"><span class="close">&times;</span><h2>Kasjan Zalewski</h2></div>
+
+									<div class="modal-body"><p>Cześć, jestem Kasjan! Pełnie role lidera projektu DebatOX. W wolnym czasie, jeśli chodzi o rzeczy informatyczne, zajmuję się tworzeniem stron internetowych oraz programowaniem w c++. Poza tym jeszcze lubie jeździć na rowerze oraz grać w gry komputerowe. Jest to mój pierwszy taki projekt, ale następne będzie można śledzić na moim GitLabie.</p><img src="img/kasjan.jpg" class="osobazdj"></div>
+									
+									<div class="modal-footer">
+										<img src="img/gitlab.png" usemap="#labkasjan" width="24px" height="24px">
+										<map id="labkasjan" name="labkasjan">
+										<area shape="rect" coords="0,0,24,24" href="https://gitlab.com/kasjanoboss" alt="kasjanoboss"/>
+									</div></div></div>
+						
+						<!-- ---------------------------filip ch--------------------------- -->
+						<button class="osoba" id="myBtn2">Filip Chmielewski</button>
+						
+							<div id="myModal2" class="modal">
+								<div class="modal-content">
+									<div class="modal-header"><span class="close">&times;</span><h2>Filip Chmielewski</h2></div>
+									
+									<div class="modal-body"><p>Cześć, jestem Filip! Pełnie role grafika projektu DebatOX. W wolnym czasie zajmuje się linuxem oraz programowaniem w c++. Poza tym jeszcze lubie jeździć na nartach oraz grać w gry komputerowe.</p><img src="img/filipch.jpg" class="osobazdj"></div>
+									
+									<div class="modal-footer">
+										<img src="img/github.png" usemap="#hubfilipch" width="24px" height="24px">
+										<map id="hubfilipch" name="hubfilipch">
+										<area shape="rect" coords="0,0,24,24" href="https://github.com/ChmieleskiFilip" alt="ChmieleskiFilip"/>
+									</div></div></div>
+						
+						<!-- ---------------------------filip k--------------------------- -->
+						<button class="osoba" id="myBtn3">Filip Kokowski</button>
+							<div id="myModal3" class="modal">
+								<div class="modal-content">
+									<div class="modal-header"><span class="close">&times;</span><h2>Filip Kokowski</h2></div>
+									
+									<div class="modal-body"><p>Cześć, mam na imię Filip. W projekcie DebatOX jestem odpowiedzialny za programowanie aplikacji. Cały przebieg jej tworzenia można sprawdzić na moim GitLabie. Interesuję się muzyką, drukiem 3D oraz programowaniem.</p><img src="img/filipk.jpg" class="osobazdj"></div>
+									
+									<div class="modal-footer">
+										<img src="img/gitlab.png" usemap="#labfilipk" width="24px" height="24px">
+										<map id="labfilipk" name="labfilipk">
+										<area shape="rect" coords="0,0,24,24" href="https://gitlab.com/filipkokowski999" alt="filipkokowski999"/>
+									</div></div></div>
+						
+						<!-- ---------------------------wiktoria--------------------------- -->
+						<button class="osoba" id="myBtn4">Wiktoria Paszko</button>
+							<div id="myModal4" class="modal">
+								<div class="modal-content">
+									<div class="modal-header"><span class="close">&times;</span><h2>Wiktoria Paszko</h2></div>
+									
+									<div class="modal-body"><p>Hej, mam na imię Wiktoria. W naszym grupowym projekcie DebatOX pełnie funkcje web-designer. W zakresie informatycznym interesuję się projektowaniem stron internetowyh oraz grafiką. W wolnym czasie lubię spacerować, czytać książki, oglądać filmy lub seriale oraz gotować.</p><img src="img/wiktoria.jpg" class="osobazdj"></div>
+									
+									<div class="modal-footer">
+										<!-- gitlab -->
+										<img src="img/gitlab.png" usemap="#labwika" width="24px" height="24px">
+										<map id="labwika" name="labwika">
+										<area shape="rect" coords="0,0,24,24" href="https://gitlab.com/wintoria" alt="wintoria"/>
+										<!-- github -->
+										<img src="img/github.png" usemap="#hubwika" width="24px" height="24px">
+										<map id="hubwika" name="hubwika">
+										<area shape="rect" coords="0,0,24,24" href="https://github.com/wintoria" alt="wintoria"/>
+									</div></div></div>
+						
+				</div>
+
+				<hr><br>
+				<div class="galeria">
+					<div id="gal" class="main">Galeria</div><br>
+					<div class="instrukcja"><img src="img/start.png" class="jpg1"><br><br>Na rys.1 przedstawiony jest ekran startowy, gdzie ustawiamy temat, uczestników oraz czas debaty.</div>
+					<div class="instrukcja"><img src="img/podczas.png" class="jpg2"><br><br>Na rys. 2 widoczny już jest ekran w trakcie debaty.</div>
+				</div>
+			</div>
+		</div>
+
+
+		<!-- JavaScipt -->
+
+		<script>
+			window.onscroll = function() {scrollFunction()};
+
+			function scrollFunction() {
+			  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+				document.getElementById("navbar").style.top = "0";
+			  } else {
+				document.getElementById("navbar").style.top = "-50px";
+			  }
+			}
+			
+			// Modal'e (wysuwajace sie okienka)
+			
+			var datamap = new Map([
+            [document.getElementById("myBtn1"), document.getElementById("myModal1")],
+            [document.getElementById("myBtn2"), document.getElementById("myModal2")],
+			[document.getElementById("myBtn3"), document.getElementById("myModal3")],
+			[document.getElementById("myBtn4"), document.getElementById("myModal4")],
+			]);
+
+			datamap.forEach((value, key) => {
+				doModal(key, value);
+			});
+
+			function doModal(anchor, popupbox) {
+
+				// Get the <span> element that closes the modal
+				var span = popupbox.getElementsByClassName("close")[0];
+
+				anchor.addEventListener("click", function (event) {
+					popupbox.style.display = "block";
+				});
+
+				span.addEventListener("click", function (event) {
+					popupbox.style.display = "none";
+				});
+
+				window.addEventListener("click", function (event) {
+					if (event.target == popupbox) {
+						popupbox.style.display = "none";
+					}
+				});
+			}
+			
+		</script>
+		
+	</body>
+</html>
