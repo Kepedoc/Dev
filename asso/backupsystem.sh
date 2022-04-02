@@ -1,26 +1,51 @@
 #!/bin/bash
 
-FULLDATE=$(date +%c)
+LOG_LOC="/var/log/backup.log"
 
-FILENAME="/home/keped/backup/backup_sorcefolder/file"
+function check_dir_loc {
+		if [ ! -s "/backup_dirs.conf" ]
+		then
+				echo "missing config! no information on where to look for backups"
+				echo "create a backup_dir.conf in root directory"
+				exit 1
+		fi
+}				
+function check_backup_loc {
+		if [ ! -s "/backup_loc.conf" ]
+		then
+				echo "missing config! no information on where to save the files"
+				echo "create a backup_loc.conf in root directory"
+				exit 1
+		fi
+}
+function check_schedule {
+		if [ ! -s "/etc/cron.weekly/make_backup" ]
+		then
+				sudo cp make_backup.sh /etc/cron.weekly/make_backup
+				echo "Weekly backups will be made"
+				echo "The exact time is in the /etc/crontab file"
+				exit 1
+		fi
+}
+function execute_backup {
+		
+		backup_path=$(cat /backup_loc.conf)
 
-BACKED=$(date +%N -r /home/keped/backup/backupfolder) 
+		echo "Starting backup..." > $LOG_LOC
+		while read dir_path
+		do 
+			dir_name=$(basename $dir_path)
+			filename=$backup_path$dir_name.tar.gz
+			tar -zcf $filename $dir_path 2>> $LOG_LOC
+			chown keped:keped $filename
+			echo "backing up of $dir_name completed." >> $LOG_LOC
+		done < /backup_dirs.conf
 
-SORCE=$(date +%N -r /home/keped/backup/backup_sorcefolder)
+		echo "Backup finished at:" >> $LOG_LOC
+		date >> $LOG_LOC
+}
 
-INITIALSIZE=$(cat $FILENAME | wc -c)
-
-ARCHIVEDFILESIZE=$(tar ztvf $FILENAME -v --wildcards)
-
-if [ $BACKED -gt $SORCE ]; 
-then	
-
-tar -cvf /home/keped/backup/backupfolder/kompressed /home/keped/backup/backup_sorcefolder
-
-echo -e "most recent archivisation of $FILENAME at: $FULLDATE \n filesize cut down from $INITIALSIZE bites to $ARCHIVEDFILESIZE bites" >> /var/log/backup.log
-
-else
-echo "nothing is to be done"
-
-fi
-
+check_dir_loc
+check_backup_loc
+check_schedule
+performe backup
