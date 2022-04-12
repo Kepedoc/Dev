@@ -2,53 +2,63 @@
 <html>
 <head>
 <style>
+	*{
+	margin: 0px;
+	}
 	body{
-	background-color: brown; 
+	background-color: gray;
+	height: 100vh;
+	overflow: hidden;
 	}
 	.menu{
-	height: 250px;
+	height: 35vh;
 	width: 100%;
 	background-color: darkgray;
+	background-image: url('wood.jpeg');
 	border-style: solid;
 	border-color: black; 
 	border-width: 1px;
 	text-align: center;
+	position: relative;
+	}
+	.name{
+	font-size: 115px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%)
+	}
+	img{
+	height: 35vh; 
+	width: 100%;
 	}
 	.menu2{
-	height: 100px;
+	height: 15vh;
 	width: 100%;
-	border-style: solid;
-	border-color: black;
-	border-width: 1px;
 	}
 	.menu3{
-	height: 100px;
-	width: 24%;
-	border-style: solid;
-	border-color: black;
-	border-width: 1px;
+	height: 15vh;
+	width: 25%;
 	float: left;
 	text-align: center;
 	}
-	.mid{
-	height: 301px;
-	width:	100%;
-	border-style: solid;
-	border-color: black;
-	border-width: 1px;
-	}
 	.mid3{
-	height: 300px;
-	width: 33%;
-	border-style: solid;
-	border-color: black;
-	border-width: 1px;
+	height: 100%;
+	width: 33.33%;
 	float: left;
+	}
+	.mid{
+	width: 100%;
+	height: 50vh;
 	}
 </style>
 </head>
 <body>
-<div class="menu">NazwaFirmy</div>
+<div class="menu">
+	<img src="wood.jpeg"></img>
+	<div class="name">nazwafirmy</div>
+</div>
+
 <div class="menu2">
 	<div class="menu3">home</div>
 	<div class="menu3">wybór</div>
@@ -56,17 +66,13 @@
 	<div class="menu3">kontakt</div>
 </div>
 <div class="mid">
-	<div class="mid3">
-	<a href="opcja1.html">Opcja 1</a>
-	</div>
-	<div class="mid3">
-	<a href="opcja2.html">opcja 2</a>
-	</div>
-	<div class="mid3">
-	<a href="opcja3.html">Opcja 3</a>
-	</div>
-</div>
+	<a href="opcja1.html">
+    	<span class="mid3" style="display: block;">Opcja 1</span></a>
+	<a href="opcja2.html">
+	<span class="mid3" style="display: block;">Opcja 2</span></a>
+	<a href="opcja3.html">
+	<span class="mid3" style="display: block;">Opcja 3</span></a>
 
-
+</div>		
 </body>
 </html>

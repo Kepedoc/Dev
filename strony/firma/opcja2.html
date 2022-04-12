@@ -1,38 +1,71 @@
 <!DOCTYPE html>
 <html>
+<head>
 <style>
-
+	*{
+	margin: 0px;
+	}
 	body{
-	background-color: brown; 
+	background-color: gray;
+	height: 100vh;
+	overflow: hidden;
 	}
 	.menu{
-	height: 250px;
+	height: 35vh;
 	width: 100%;
 	background-color: darkgray;
+	background-image: url('wood.jpeg');
 	border-style: solid;
 	border-color: black; 
 	border-width: 1px;
 	text-align: center;
+	position: relative;
 	}
-	.tab{
-	height: 250px;
-	width: 24%;
-	background-color: darkgray;
-	border-style: solid;
-	border-color: black; 
-	border-width: 1px;
-	text-align: center;
+	.name{
+	font-size: 115px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%)
+	}
+	img{
+	height: 35vh; 
+	width: 100%;
+	}
+	.mid3{
+	height: 100%;
+	width: 33.33%;
 	float: left;
 	}
-
+	.mid{
+	width: 100%;
+	height: 50vh;
+	}
+a{text-decoration:none;}
+a:visited{text-decoration:none;}
+a:hover{text-decoration:none;}
+a:focus{text-decoration:none;}
+a:active{text-decoration:none;}
 </style>
-
+</head>
 <body>
+<div class="menu">
+	
+	<a href="Firma.html">
+		<img src="wood.jpeg">
+		<!--<span class="menu" style="display: block;"></span> -->
+	</img>
+	</a>
+	<div class="name"><a href="Firma.html">nazwafirmy</a></div>
+</div>
+<div class="mid">
+	<a href="">
+    	<span class="mid3" style="display: block;">Opcja 1</span></a>
+	<a href="">
+	<span class="mid3" style="display: block;">Opcja 2</span></a>
+	<a href="">
+	<span class="mid3" style="display: block;">Opcja 3</span></a>
 
-	<div class="menu">this is the main menu</div> <br>
-	<div class="tab">hello world</div> <br>
-
-	<button onclick="document.location='Firma.html'">Powrót do głównej strony</button>
+</div>		
 </body>
 </html>
-
