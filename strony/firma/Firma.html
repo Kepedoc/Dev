@@ -2,36 +2,73 @@
 <html>
 <head>
 <style>
-	*{
-	margin: 0px;
-	}
+*{
+box-sizing: border-box;
+margin: 0px;
+}
+.mySlides{
+display: none;
+}
+img{
+vertical-align: middle;
+height: 100%;
+width: auto;
+}
+.slideshow-container{
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+/* Caption text */
+.text{
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+@keyframes fade {
+  from {opacity: .2} 
+  to {opacity: 1}
+}
 	body{
-	background-color: gray;
+	background-color: #1E5C5C;
 	height: 100vh;
 	overflow: hidden;
 	}
 	.menu{
 	height: 35vh;
 	width: 100%;
-	background-color: darkgray;
+	/*background-color: darkgray;
 	background-image: url('wood.jpeg');
 	border-style: solid;
 	border-color: black; 
-	border-width: 1px;
+	*/border-width: 1px;
 	text-align: center;
 	position: relative;
 	}
 	.name{
-	font-size: 115px;
+	font-size: 30px;
 	position: absolute;
 	left: 50%;
 	top: 50%;
-	transform: translate(-50%, -50%)
+	transform: translate(-50%, -50%);
+	display: inline;
 	}
-	img{
+	/*img{
 	height: 35vh; 
 	width: 100%;
 	}
+	*/
 	.menu2{
 	height: 15vh;
 	width: 100%;
@@ -52,22 +89,74 @@
 	height: 50vh;
 	}
 </style>
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+	let i
+	let slides = document.getElementsByClassName("mySlides")
+
+	for (i = 0; i < slides.length; i++) {
+		console.log(slides[i])
+		slides[i].style.display = "none"
+	}
+	slideIndex++;
+	if (slideIndex > slides.length) {
+		  slideIndex = 1
+	}
+	console.log(Array.from(slides))
+	/*[...slides].forEach(x => {
+		console.log(x)
+		console.log('1')
+	})*/
+	//slides[slideIndex-1].style.display = "block"
+	//setTimeout(showSlides, 8000)
+}
+</script>
 </head>
 <body>
 <div class="menu">
-	<img src="wood.jpeg"></img>
-	<div class="name">nazwafirmy</div>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="wood.jpeg" style="width:100%">
+  <div class="text">Caption Text</div>
 </div>
 
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="tile.jpeg" style="width:100%">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="wood.jpeg" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+
+</div>
+</div>
 <div class="menu2">
-	<div class="menu3">home</div>
-	<div class="menu3">wybór</div>
-	<div class="menu3">wybór</div>
-	<div class="menu3">kontakt</div>
+	<a href="">
+	<div class="menu3">home</div></a>
+	<a href="">
+	<div class="menu3">wybór</div></a>
+	<a href="">
+	<div class="menu3">wybór</div></a>
+	<a href="kontakty.html">
+	<div class="menu3">kontakt</div></a>
 </div>
 <div class="mid">
-	<a href="opcja1.html">
-    	<span class="mid3" style="display: block;">Opcja 1</span></a>
+	<div style="position: relative;">
+		<a href="opcja1.html">
+			<img class="mid3" src="restauracje.jpeg">
+		</a>
+		<a href="opcja1.html" class="name">restauracja</a>
+		
+	</div>
 	<a href="opcja2.html">
 	<span class="mid3" style="display: block;">Opcja 2</span></a>
 	<a href="opcja3.html">
