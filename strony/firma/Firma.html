@@ -6,6 +6,9 @@
 box-sizing: border-box;
 margin: 0px;
 }
+a,a:link,a:visited,a:hover,a:active{
+    text-decoration: none;
+}
 .mySlides{
 display: none;
 }
@@ -19,7 +22,6 @@ width: auto;
   height: 100%;
   position: relative;
 }
-
 /* Caption text */
 .text{
   color: #f2f2f2;
@@ -40,54 +42,67 @@ width: auto;
   from {opacity: .2} 
   to {opacity: 1}
 }
-	body{
-	background-color: #1E5C5C;
-	height: 100vh;
-	overflow: hidden;
-	}
-	.menu{
-	height: 35vh;
-	width: 100%;
-	/*background-color: darkgray;
-	background-image: url('wood.jpeg');
-	border-style: solid;
-	border-color: black; 
-	*/border-width: 1px;
-	text-align: center;
-	position: relative;
-	}
-	.name{
-	font-size: 30px;
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	transform: translate(-50%, -50%);
-	display: inline;
-	}
-	/*img{
-	height: 35vh; 
-	width: 100%;
-	}
-	*/
-	.menu2{
-	height: 15vh;
-	width: 100%;
-	}
-	.menu3{
-	height: 15vh;
-	width: 25%;
-	float: left;
-	text-align: center;
-	}
-	.mid3{
-	height: 100%;
-	width: 33.33%;
-	float: left;
-	}
-	.mid{
-	width: 100%;
-	height: 50vh;
-	}
+body{
+background-color: #1E5C5C;
+height: 100vh;
+overflow: hidden;
+}
+.menu{
+height: 35vh;
+width: 100%;
+/*background-color: darkgray;
+background-image: url('wood.jpeg');
+border-style: solid;
+border-color: black; 
+*/border-width: 1px;
+text-align: center;
+position: relative;
+}
+.name{
+font-size: 30px;
+position: absolute;
+left: 50%;
+top: 50%;
+transform: translate(-50%, -50%);
+display: inline;
+}
+img{
+height: 100%;
+width: 100%;
+object-fit:cover;
+}
+.menu2{
+height: 15vh;
+width: 100%;
+}
+.menu3{
+height: 15vh;
+width: 25%;
+float: left;
+text-align: center;
+}
+.mid3{
+height: 100%;
+width: 33.33%;
+float: left;
+}
+.mid{
+width: 100%;
+height: 50vh;
+}
+.img3{
+width: 33.33%;
+height: 100%;
+float: left;
+}
+.imgtext{
+color: white; 
+text-decoration: none;
+font-size: 40px;
+position: relative;
+bottom: 55%;
+text-align: center;
+}
 </style>
 <script>
 var slideIndex = 0;
@@ -117,6 +132,8 @@ function showSlides() {
 </head>
 <body>
 <div class="menu">
+
+
 <div class="slideshow-container">
 
 <div class="mySlides fade">
@@ -136,9 +153,10 @@ function showSlides() {
   <img src="wood.jpeg" style="width:100%">
   <div class="text">Caption Three</div>
 </div>
+</div>
+</div>
 
-</div>
-</div>
+
 <div class="menu2">
 	<a href="">
 	<div class="menu3">home</div></a>
@@ -149,18 +167,30 @@ function showSlides() {
 	<a href="kontakty.html">
 	<div class="menu3">kontakt</div></a>
 </div>
+
+
 <div class="mid">
-	<div style="position: relative;">
-		<a href="opcja1.html">
-			<img class="mid3" src="restauracje.jpeg">
-		</a>
-		<a href="opcja1.html" class="name">restauracja</a>
-		
-	</div>
-	<a href="opcja2.html">
-	<span class="mid3" style="display: block;">Opcja 2</span></a>
-	<a href="opcja3.html">
-	<span class="mid3" style="display: block;">Opcja 3</span></a>
+	
+	<div class="img3">
+        <a href="opcja1.html">
+          <img class="img" src="restauracje.jpeg">
+          <div class="imgtext">restauracje</div>
+        </a>
+    </div>  
+
+	<div class="img3">
+        <a href="opcja2.html">
+          <img class="img" src="restauracje.jpeg">
+          <div class="imgtext">opcja 2</div>
+        </a>
+    </div>  
+
+	<div class="img3">
+        <a href="opcja3.html">
+          <img class="img" src="restauracje.jpeg">
+          <div class="imgtext">opcja 3</div>
+        </a>
+    </div>  
 
 </div>		
 </body>
