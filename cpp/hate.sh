@@ -3,9 +3,9 @@
 number=1
 awnser=yes
 
-echo "i hate 69 niggers :D"
-echo "no wait 420 XD"
-echo " 69 and thats funny ain't it?"
+echo "i hate 69 niggers"
+echo "no wait 420 to be exact"
+echo " 69 and 420 thats funny ain't it?"
 read awnser
 
 if [ $awnser = yes ]
