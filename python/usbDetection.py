@@ -1,5 +1,7 @@
 import subprocess
-import vlc
+
+def play_mp3():
+    subprocess.Popen(['mpg123','-q', "/home/keped/Pulpit/usb.mp3"]).wait()
 
 prevUsb = subprocess.run('lsusb', capture_output=True, text=True)
 
@@ -10,7 +12,7 @@ try:
         if prevUsb.stdout == usb.stdout:
             pass
         else:
-            p = vlc.MediaPlayer("/home/keped/Desktop/usb.mp3")
+            play_mp3()
             prevUsb = usb
 except Exception as e:
     print(e)
