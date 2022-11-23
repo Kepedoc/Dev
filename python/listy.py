@@ -12,6 +12,5 @@ while True:
         usun = input("podaj co chesz usunonc\n")
         list.remove(usun)
     elif opcja == 4:
-        list.sort(list)
+        list.sort()
         print(list)
-done
