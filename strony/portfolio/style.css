@@ -53,3 +53,19 @@ a:active{
 	width: 100vw;
 	text-align: center;
 }
+.logo{
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-color: #5a2ca0;
+	border-width: 2.5vh;
+	border-radius: 3vh;
+	margin: auto;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	display: flex;
+	position: absolute;
+	font-size: 40vh;
+	color: #000;
+	flex-direction: row;
+}
