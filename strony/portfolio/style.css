@@ -1,0 +1,36 @@
+body{
+	background-color: #381552;
+}
+.a{
+	width: 100vh;
+	height: 100%;
+}
+.img{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.navbar {
+    position:absolute;
+    top: -8vh;
+    left: 0vw;
+    height: 12vh;
+    width: 100vw;
+    background-color: #4f4f4f;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+    transition: top 0.5s cubic-bezier(0, 0, 0, 1);
+}
+.navbar:hover{
+    top: 0vw;
+}
+.navelem{
+	text-align: center;
+	color: #ffffff;
+}
+.navelem:hover{
+	color: aquamarine;
+}
