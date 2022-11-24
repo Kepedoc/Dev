@@ -1,19 +1,16 @@
 body{
 	background-color: #381552;
 }
-.1{
+.a{
 	width: 100vh;
 	height: 100%;
 }
-.2{
+.b{
 	
 }
-.madeinheaven{
+.img{
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	width: 1127;
-	height: 284;
-	background-image: url("wallpaper.png");
 }
