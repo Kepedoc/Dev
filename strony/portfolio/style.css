@@ -46,4 +46,9 @@ a:hover{
 a:active{
 	text-decoration: none;
 }
-
+.arrow{
+	font-size: 10vh;
+	margin-top: 1.5vh;
+	width: 100vw;
+	text-align: center;
+}
