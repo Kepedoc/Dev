@@ -2,6 +2,7 @@ body{
 	font-family: "Pirata One";
 	color: #5a2ca0;
 	background-color: #381552;
+	overflow: hidden;
 }
 .a{
 	position: absolute;
