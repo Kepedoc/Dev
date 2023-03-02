@@ -1,17 +1,17 @@
 BMW E36 - Full bulid
 ---------------------
-- wheels BBS
-- body kit
-- exhaust system
-- steering wheel
-- angle lights
-- shifter 
-- strobe lights
-- rev limiter
-- leds purple
-- air intake
-- livery flames 
-- stickers
-- DIY tune
-- DIY static
-- DIY diff weld
+- wheels BBS		1772 pln
+- body kit		4000 pln		
+- exhaust system	1700 pln
+- cold air intake	1500 pln
+- steering wheel	700 pln
+- angle lights		500 pln
+- livery flames		400 pln
+- stickers		400 pln	
+- shifter 		100 pln
+- strobe lights		100 pln
+- rev limiter		100 pln
+- leds purple		50 pln
+- DIY tune		-
+- DIY static		-
+- DIY diff weld		-
