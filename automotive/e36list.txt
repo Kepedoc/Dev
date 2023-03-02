@@ -1,9 +1,9 @@
 BMW E36 - Full bulid
 ---------------------
-- wheels BBS		1772 pln
-- body kit		4000 pln		
-- exhaust system	1700 pln
-- cold air intake	1500 pln
+- body kit		4,000 pln	
+- wheels BBS		1,772 pln	
+- exhaust system	1,700 pln
+- cold air intake	1,500 pln
 - steering wheel	700 pln
 - angle lights		500 pln
 - livery flames		400 pln
@@ -15,3 +15,4 @@ BMW E36 - Full bulid
 - DIY tune		-
 - DIY static		-
 - DIY diff weld		-
+--------------------  = 11,322 pln
