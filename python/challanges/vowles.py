@@ -1,0 +1,8 @@
+word = input("input one word:\n")
+x = word.count("a")
+x = x + word.count("e")
+x = x + word.count("i")
+x = x + word.count("o")
+x = x + word.count("u")
+print("the amount of vowles is: ")
+print(x)
