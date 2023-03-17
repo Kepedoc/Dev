@@ -9,6 +9,8 @@ match option:
         numbers.sort()
         print(numbers)
     case "desc":
-        numbers.sort(reverse = True)
+        numbers.sort()
+        numbers.reverse()
+        print(numbers)
     case "EXIT":
         exit()
