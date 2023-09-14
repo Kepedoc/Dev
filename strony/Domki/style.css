@@ -8,7 +8,7 @@ body::-webkit-scrollbar{
   }
 #nav{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     height: 150px;
     width: 100%;
     float: left;
@@ -89,12 +89,8 @@ a {
     background-color: #2D6CC5;
     padding: 100px  ;
 }
-.warum-wir1{
-    width: 40%;
-}
-.flex{
-    display: flex;
-    justify-content: space-around;
+.text2{
+	width: 60%;
 }
 .title{
     font-size: 15vh;
