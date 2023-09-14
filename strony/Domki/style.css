@@ -1,7 +1,7 @@
 body{
-    background-color: #E3F2F8;
+    background-color: #8FB1DD;
     margin: 0px;
-    font-size: 2vh;
+    font-size: 3vh;
 }
 body::-webkit-scrollbar{
     display: none;
@@ -43,14 +43,20 @@ body::-webkit-scrollbar{
     width: 105px;
     height: 105px;
     margin-bottom: 5px;
+    
+}
+.logo img{
+    border-radius: 50px;
 }
 footer div .logo img{
+    border-radius: 0;
     width: 100%;
     height: auto;
 }
 footer{
-    height: 300px;
-    background-color: #474747;
+    color: white;
+    height: 30vh;
+    background-color: #182D63;
     padding: 50px;
     display: flex;
     justify-content: space-around;
@@ -64,22 +70,23 @@ a {
 }
 .about-us a{
     font-size: 12vh;
-    opacity: 0.59;
+    opacity: 0.6;
     color: #1a1a1a;
     position: relative;
-    top: 70px;
-    right: 40px;
+    top: 7vh;
+    right: 8vh;
 }
 .text1{
     width: 30%;
 }
 .about-us{
+    background-color: #5797D0;
     display: flex;
     justify-content: space-around;
     padding: 50px;
 }
 .warum-wir{
-    background-color: darkblue;
+    background-color: #2D6CC5;
     padding: 100px  ;
 }
 .warum-wir1{
@@ -109,4 +116,20 @@ button{
 }
 button:hover{
     background-color: #C2B280;
+}
+#nav a button{
+    height: 80px;
+    width: 200px;
+    font-size: 5vh;
+    position: relative;
+    top: 20%;
+}
+#but1{
+    border-radius: 50px 0 0 50px;
+}
+#but4{
+    border-radius: 0 50px 50px 0;
+}
+#but2, #but3{
+    border-radius: 0;
 }
