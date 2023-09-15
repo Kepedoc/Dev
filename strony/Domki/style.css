@@ -116,11 +116,12 @@ footer a {
     margin:0px;
 }
 button{
-    height: 50px;
-    width: 150px;
+    height: 80px;
+    width: 250px;
     background-color: #EBE0B8;
-    border-radius: 25px;
+    border-radius: 50px;
     border: none;
+    font-size: 3.5vh;
 }
 button:hover{
     background-color: #C2B280;
