@@ -101,6 +101,7 @@ footer a {
 .warum-wir{
     background-color: #2D6CC5;
     padding: 100px;
+    height: 1150px;
 }
 .text2{
 	width: 100%;
@@ -174,3 +175,13 @@ button:hover{
 button{
     font-family: "Kaushan Script";
 }
+.impressum{
+    width: 70%;
+    text-align: left;
+
+}
+@media (max-width: 1488px) {
+    #nav a button{
+        width: 200px;
+    }
+  }
