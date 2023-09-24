@@ -76,18 +76,6 @@ footer a {
     text-decoration: none;
     color: white;
 }
-.about-us a{
-    font-size: 12vh;
-    opacity: 0.6;
-    color: #1a1a1a;
-    position: relative;
-    top: 7vh;
-    right: 8vh;
-    text-align: center;
-    box-sizing: unset;
-    width: 70vh;
-    display: block;
-}
 .text1{
     width: 50%;
     text-align: justify;
@@ -180,8 +168,53 @@ button{
     text-align: left;
 
 }
+.about-us a{
+    font-size: 12vh;
+    opacity: 0.6;
+    color: #1a1a1a;
+    position: relative;
+    top: 7vh;
+    right: 8vh;
+    text-align: center;
+    box-sizing: unset;
+    width: 70vh;
+    display: block;
+}
 @media (max-width: 1488px) {
     #nav a button{
         width: 200px;
     }
+    #uber-uns img{
+        display: none;
+    }
+    .about-us a{
+        font-size: 12vh;
+        opacity: unset;
+        color: black;
+        position: unset;
+        top: unset;
+        right: unset;
+        text-align: center;
+        box-sizing: unset;
+        width: 70vh;
+        display: block;
+    }
+    .about-us{
+        display: block;
+        justify-content: unset;
+        height: 950px;
+    }
+    .text1{
+        width: 90%;
+    }
   }
+@media (max-width: 1096px) {
+    .about-us{
+        height: 1100px;
+    }
+}
+.klocek{
+    width: 1096px;
+    height: 30px;
+    background-color: black;
+}
