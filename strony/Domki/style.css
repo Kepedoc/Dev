@@ -134,26 +134,6 @@ button:hover{
 #but2, #but3{
     border-radius: 0;
 }
-.paragraph{
-    float: right;
-    height: 200px;
-    width: 50%;
-    box-sizing: border-box;
-    margin-bottom: 20px;
-}
-.para_con{
-    height: 200px;
-    width: 90%;
-    box-sizing: border-box;
-}
-.text2 img{
-    width: 200px;
-    height: 200px;
-    box-sizing: border-box;
-    float: left;
-    margin-right: 3vh ;
-    margin-left: 20vw;
-}
 .about-us div{
     padding-left: 50px;
 }
@@ -186,7 +166,42 @@ button{
     width: 70vh;
     display: block;
 }
+.paragraph{
+    float: right;
+    height: 200px;
+    width: 50%;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+.para_con{
+    height: 200px;
+    width: 90%;
+    box-sizing: border-box;
+}
+.text2 img{
+    width: 200px;
+    height: 200px;
+    box-sizing: border-box;
+    float: left;
+    margin-right: 3vh ;
+    margin-left: 20vw;
+}
 @media (max-width: 1488px) {
+    .paragraph{
+        float: right;
+        height: 200px;
+        width: 60%;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+    }
+    .text2 img{
+        width: 200px;
+        height: 200px;
+        box-sizing: border-box;
+        float: left;
+        margin-right: 3vh ;
+        margin-left: 8vw;
+    }
     #nav a button{
         width: 200px;
     }
@@ -213,34 +228,21 @@ button{
     .text1{
         width: 90%;
     }
-    .paragraph{
-        float: right;
-        height: 200px;
-        width: 50%;
-        box-sizing: border-box;
-        margin-bottom: 20px;
-    }
-    /* .para_con{
-        height: 200px;
-        width: 300px;
-        box-sizing: border-box;
-    } */
-    .text2 img{
-        width: 200px;
-        height: 200px;
-        box-sizing: border-box;
-        float: left;
-        margin-right: 3vh ;
-    }
   }
 @media (max-width: 1096px) {
     .about-us{
         height: 1100px;
     }
+    .text2 img{
+        margin-left: 5vw;
+    }
 }
 @media (max-width: 955px) {
     .about-us{
         height: 1300px;
+    }
+    .text2 img{
+        margin-left: 3vw;
     }
 }
 @media (max-width: 805px) {
@@ -250,6 +252,9 @@ button{
     }
     .about-us a{
         text-align: left;
+    }
+    .text2 img{
+        margin-left: 1vw;
     }
 }
 .klocek{
