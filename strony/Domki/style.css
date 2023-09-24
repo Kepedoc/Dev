@@ -134,19 +134,25 @@ button:hover{
 #but2, #but3{
     border-radius: 0;
 }
+.paragraph{
+    float: right;
+    height: 200px;
+    width: 50%;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+.para_con{
+    height: 200px;
+    width: 90%;
+    box-sizing: border-box;
+}
 .text2 img{
     width: 200px;
     height: 200px;
     box-sizing: border-box;
-    float: right;
-    margin-right: 3vh ;
-}
-.text2 div{
     float: left;
-    height: 200px;
-    width: 40%;
-    box-sizing: border-box;
-    margin-bottom: 20px;
+    margin-right: 3vh ;
+    margin-left: 20vw;
 }
 .about-us div{
     padding-left: 50px;
@@ -207,14 +213,47 @@ button{
     .text1{
         width: 90%;
     }
+    .paragraph{
+        float: right;
+        height: 200px;
+        width: 50%;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+    }
+    /* .para_con{
+        height: 200px;
+        width: 300px;
+        box-sizing: border-box;
+    } */
+    .text2 img{
+        width: 200px;
+        height: 200px;
+        box-sizing: border-box;
+        float: left;
+        margin-right: 3vh ;
+    }
   }
 @media (max-width: 1096px) {
     .about-us{
         height: 1100px;
     }
 }
+@media (max-width: 955px) {
+    .about-us{
+        height: 1300px;
+    }
+}
+@media (max-width: 805px) {
+    .about-us{
+        height: 1500px;
+        padding: 20px;
+    }
+    .about-us a{
+        text-align: left;
+    }
+}
 .klocek{
-    width: 1096px;
+    width: 805px;
     height: 30px;
     background-color: black;
 }
