@@ -2,6 +2,7 @@ html{
 	scroll-behavior: smooth;
 }
 body{
+    min-width: 635px;
     background-color: #8FB1DD;
     margin: 0px;
     font-size: 3vh;
@@ -44,6 +45,7 @@ body::-webkit-scrollbar{
 #menu{
     height: 200px;
     width: 100%;
+    padding-top: 20px;
 }
 .logo{
     margin-bottom: 5px;
@@ -88,7 +90,7 @@ footer a {
 }
 .warum-wir{
     background-color: #2D6CC5;
-    padding: 100px;
+    padding-top: 50px;
     height: 1150px;
 }
 .text2{
@@ -111,21 +113,21 @@ button{
     height: 80px;
     width: 250px;
     background-color: #EBE0B8;
-    border-radius: 50px;
+    border-radius: 25px;
     border: none;
     font-size: 3.5vh;
 }
 button:hover{
     background-color: #C2B280;
 }
-#nav a button{
+#nav button{
     height: 80px;
     width: 300px;
     font-size: 4vh;
     position: relative;
     top: 20%;
 }
-#but1{
+/* #but1{
     border-radius: 50px 0 0 50px;
 }
 #but4{
@@ -133,7 +135,7 @@ button:hover{
 }
 #but2, #but3{
     border-radius: 0;
-}
+} */
 .about-us div{
     padding-left: 50px;
 }
@@ -186,7 +188,30 @@ button{
     margin-right: 3vh ;
     margin-left: 20vw;
 }
+#top{
+    display: flex;
+    justify-content: space-around;
+}
+#bottom{
+    display: flex;
+    justify-content: space-around;
+}
+.middle{
+    border-radius: 0;
+}
+#nav br, .znacznik_logo, #nav .middle{
+    display: none;
+}
 @media (max-width: 1488px) {
+    #nav br, .znacznik_logo, #nav .middle{
+        display: block;
+    }
+    #nav .logo{
+        display: none;
+    }
+    #but4{
+        border-right: 0px!important;
+    }
     .paragraph{
         float: right;
         height: 200px;
@@ -229,12 +254,33 @@ button{
         width: 90%;
     }
   }
-@media (max-width: 1096px) {
+@media (max-width: 1220px) {
+    .text2 img{
+        margin-left: 5vw;
+    }
+    .paragraph{
+        width: 65%;
+    }
+}
+@media (max-width: 1120px) {
     .about-us{
         height: 1100px;
     }
     .text2 img{
-        margin-left: 5vw;
+        margin-left: 3vw;
+    }
+    .paragraph{
+        float: right;
+        height: 200px;
+        width: 100%;
+        box-sizing: border-box;
+        margin-bottom: 5px;
+    }
+    .para_con{
+        padding-left: 50px;
+    }
+    .text2 img{
+        display: none;
     }
 }
 @media (max-width: 955px) {
@@ -242,10 +288,35 @@ button{
         height: 1300px;
     }
     .text2 img{
-        margin-left: 3vw;
+        margin-left: 0;
+    }
+    .paragraph{
+        margin-top: 50px;
+    }
+    .title{
+        margin-bottom: 30px;
+        height: 250px;
+    }
+    .warum-wir{
+        height: 1350px;
+    }
+    #hauptmenu{
+        display: none;
     }
 }
-@media (max-width: 805px) {
+@media (max-width: 825px) {
+    #but3, #but4{
+        float: left;
+    }
+    #menu{
+        padding: 0;
+    }
+    #nav{
+        margin-top: -7px;
+        display:grid;
+        grid-template-columns: 200px 200px;
+        grid-row-gap: 20px;
+    }
     .about-us{
         height: 1500px;
         padding: 20px;
@@ -253,12 +324,4 @@ button{
     .about-us a{
         text-align: left;
     }
-    .text2 img{
-        margin-left: 1vw;
-    }
-}
-.klocek{
-    width: 805px;
-    height: 30px;
-    background-color: black;
 }
