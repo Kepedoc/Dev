@@ -325,3 +325,54 @@ button{
         text-align: left;
     }
 }
+.fenix{
+    width: 100%;
+    height: auto;
+    background-color: #234D94;
+}
+.scrollBanner{
+    width: 100%;
+    position: relative;
+    overflow-x: hidden;
+}
+
+#first{
+    animation: first 20s linear infinite;
+    position: relative;
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    left: 0%;
+    top: 0%;
+}
+  
+#second{
+    animation: second 20s linear infinite;
+    position: relative;
+}
+
+@keyframes first{
+    from {
+        left: 0%;
+    }
+    to {
+        left: -100%;
+    }
+}
+
+@keyframes second{
+    from {
+        left: 100%;
+    }
+    to {
+        left: 0%;
+    }
+}
+.fenixTitle{
+    font-size: 15vh;
+    text-align: center;
+}
+.text3{
+    width: 60%;
+    height: auto;
+}
