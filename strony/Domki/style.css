@@ -39,7 +39,7 @@ body::-webkit-scrollbar{
     width: 100%;
     object-fit: fill;
     float: left;
-    opacity: 0.5;   
+    opacity: 0.7;   
     box-sizing: border-box;
 }
 #menu{
@@ -349,6 +349,8 @@ button{
 #second{
     animation: second 20s linear infinite;
     position: relative;
+    width: inherit;
+    height: inherit;
 }
 
 @keyframes first{
@@ -375,4 +377,6 @@ button{
 .text3{
     width: 60%;
     height: auto;
+    margin: 0 auto;
+    text-align: center;
 }
