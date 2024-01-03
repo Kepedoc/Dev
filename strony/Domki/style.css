@@ -229,6 +229,7 @@ button{
     }
     #nav a button{
         width: 200px;
+		height: 120px;
     }
     #uber-uns img{
         display: none;
@@ -310,12 +311,14 @@ button{
     }
     #menu{
         padding: 0;
+		height: 300px;
     }
     #nav{
         margin-top: -7px;
         display:grid;
         grid-template-columns: 200px 200px;
         grid-row-gap: 20px;
+		height: 
     }
     .about-us{
         height: 1500px;
