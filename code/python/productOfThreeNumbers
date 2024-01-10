@@ -1,0 +1,8 @@
+list1 = []
+for x in range(5):
+	num = int(input("input a number"))
+	list1.append(num)
+list1.sort()
+list1.reverse()
+num = list1[0] * list1[1] * list1[2]
+print(num)
