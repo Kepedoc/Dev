@@ -1,7 +1,9 @@
 #!/bin/bash
 
-number=$((1 + RANDOM % 81))
+while true; do 
 
-line=$(sed "${number}q;d" "quotes.txt")
-
-echo $line
+    number=$((1 + RANDOM % 81))
+    line=$(sed "${number}q;d" "quotes.txt")
+    echo $lines
+    sleep 1m
+done

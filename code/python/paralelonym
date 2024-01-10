@@ -1,0 +1,7 @@
+word = input("type one word\n")
+list1 = [x for x in word]
+list2 = list(reversed(list1))
+if list1 == list2: 
+	print("this word is a paralelonym")
+else:
+	print("this is a normal word")
