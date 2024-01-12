@@ -2,6 +2,7 @@ print("input 5 numbers")
 list1 = []
 for x in range(5):
 	num = int(input("enter a number\n"))
-	if num % 2 == 0:
-		list1.append(num)
-print(list1)
+	if num != 0:
+		if num % 2 == 0:
+			list1.append(num)
+print("the following numbers are even:\n",list1)
