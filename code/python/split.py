@@ -1,9 +1,9 @@
 import string
-text = str(input("type a sentence:\n"))
-punc = ''',.'''
-for ele in text:
-    if ele in punc:
-        text = text.replace(ele, "")
+text = input("type a sentence:\n"))
+punc = ',.'
+for x in text:
+    if x in punc:
+        text = text.replace(x, "")
 table = text.split()
 longest = ""
 for x in table:
