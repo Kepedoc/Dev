@@ -7,5 +7,5 @@ for x in range(5):
         x = pow(x,2)
         list.append(x)
 for x in list:
-    sum = x + sum
+    sum += x
 print(sum)
