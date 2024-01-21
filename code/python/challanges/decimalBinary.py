@@ -6,4 +6,5 @@ while devision > 0:
     left = number % 2
     binary.append(left)
     number = devision
+binary.reverse()
 print(binary)
